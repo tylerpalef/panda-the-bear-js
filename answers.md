@@ -1,3 +1,5 @@
+Panda Exercise 1
+
 //QUESTION 1
 Select the element that contains the profile image (hint: look for the class). Change the src attribute so it points to a picture of your choosing instead.
 
@@ -93,3 +95,18 @@ Find a way to select the round icons in the sidebar and then change their colour
 
 ANSWER 15
 var btn = document.querySelectorAll(".action-icon-bg"); btn.forEach(function(btn) { btn.style.backgroundColor = 'blue'; });
+
+-------------------------------------------------------------------
+
+Panda Exercise 2
+
+//DELETING
+QUESTION:
+Panda the Bear is lying about their skills! Take the "time travel" skill off the page to satisfy your personal sense of justice. Use your googling and docs-skimming skillz to find a javaScript function that will allow you to remove elements from the DOM. (hint: there are multiple ways of doing this, but parentNode might be useful when it comes to selecting the right element)
+
+
+ANSWER:
+var timeTravel = document.querySelector('.bar-default:nth-of-type(4)'); timeTravel.parentNode.removeChild(timeTravel);
+
+//CLONING
+var pikachu = document.body.querySelector('#right-image img'); var pikaclone = pikachu.cloneNode(); 
